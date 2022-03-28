@@ -26,8 +26,14 @@ do W3Schools
 - Seu chefe te pediu para fazer uma análise de alguns dados da tabela de clientes (customers)
 para que ele tome algumas decisões. Segue abaixo a lista de informações que ele te pediu
   - a. Lista completa com o nome de todos os clientes (apenas CustomerName)
+  
+  `SELECT CustomerName FROM Customers;`
   - b. Uma lista das cidades (city) que vocês atendem na Espanha (Spain)
+  
+  `SELECT city FROM Customers WHERE Country="Spain";`
   - c. Uma lista com os nomes das pessoas de contato (contactName) por ordem alfabética.
+  
+  `SELECT contactName FROM Customers ORDER BY contactName;`
   - d. Uma contagem de clientes por país (country)
   - e. Uma lista dos endereços que começam com a letra A (Address)
  
@@ -36,6 +42,8 @@ para que ele tome algumas decisões. Segue abaixo a lista de informações que e
 - Hoje seu o pessoal de marketing te pediu informações sobre os produtos. Você precisa buscar
 na tabela Products as seguintes informações:
     - a. Lista de produtos do fornecedor 24.
+    
+    `SELECT ProductName FROM Products WHERE SupplierID="24" ;`
     - b. Qual é o produto mais barato e o mais caro entre os produtos que tem um ID igual ou
 superior a 50.
     - c. Qual a média de preços por categoria.
